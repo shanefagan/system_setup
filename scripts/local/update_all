@@ -1,0 +1,8 @@
+#!/bin/bash
+# Update all the packages in the system
+apt update && apt upgrade -y && apt autoremove -y && apt autoclean -y
+
+# if flatpak is installed
+if [ -x "$(command -v flatpak)" ]; then
+    flatpak update -y
+fi

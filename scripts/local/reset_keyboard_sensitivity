@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# this is a gnome gsettings reset for the keyboard delay and repeat interval
+# I mostly use these for SC2 or games that require holding down keys for a long time
+gsettings reset org.gnome.desktop.peripherals.keyboard delay
+gsettings reset org.gnome.desktop.peripherals.keyboard repeat-interval

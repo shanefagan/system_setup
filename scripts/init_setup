@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# copy scripts from local to /usr/local/bin
+sudo cp -r scripts/local/* /usr/local/bin
+
+# enable all services and timers
+sudo systemctl enable --now $(ls systemd_files/services/*.service)
+sudo systemctl enable --now $(ls systemd_files/timers/*.timer)
+
+sudo systemctl daemon-reload

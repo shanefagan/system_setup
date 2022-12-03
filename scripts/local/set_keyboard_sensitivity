@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# this is a gnome gsettings set for the keyboard delay and repeat interval
+# I mostly use these for SC2 or games that require holding down keys for a long time
+# I use the default settings for everything else
+
+# set a variable for the delay
+KEYBOARD_DELAY=250
+KEYBOARD_INTERVAL=30
+
+gsettings set org.gnome.desktop.peripherals.keyboard delay $KEYBOARD_DELAY
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval $KEYBOARD_INTERVAL
