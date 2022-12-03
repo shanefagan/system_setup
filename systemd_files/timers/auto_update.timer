@@ -1,0 +1,13 @@
+[Unit]
+Description=Update daily or after boot
+
+[Timer]
+# 15m after boot
+OnBootSec=15min
+# every day at midnight
+OnCalendar=00 00 * * *
+Persistent=true
+Unit=update_all.service
+
+[Install]
+WantedBy=basic.target

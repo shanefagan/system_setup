@@ -1,0 +1,8 @@
+[Unit]
+Description=Update the system, autoremove older packages and clean the download cache
+
+[Service]
+ExecStart=/usr/local/bin/update_all
+
+[Install]
+WantedBy=multi-user.target
