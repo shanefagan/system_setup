@@ -4,13 +4,13 @@ Some personal scripts I normally use across new installs.
 
 # Structure
 
-##scripts
+## scripts
   - a setup script init_setup
   - a folder of scripts to copy into the usr/local/bin folder
   
 init_setup does two things, copies the contents of local to the correct folder and sets up the attached systemd timers and service files
 
-##systemd_files
+## systemd_files
 Storing the files needed for setting up the services I want to run. 
 
 # Current status
